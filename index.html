@@ -1,22 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Seleções da Copa</title>
 </head>
 <body>
 
-<header>
-        <nav>
+<header class="header">
+    <div class="container">       
+        <a href="#main" class="logo">🏆 Seleções da Copa</a>
+        
+        <nav aria-label="Navegação Principal">
+            <ul class="menu">
+                <li><a href="#colecao">Seleções</a></li>
+                <li><a href="#sugerir">Sugerir Seleção</a></li>                
+            </ul>
         </nav>
+
+        <div class="header-actions">
+            <button type="button" id="theme-toggle" aria-pressed="false">
+                🌙Modo Escuro
+            </button>
+
+            <button type="button" id="favorites-toggle"> 
+                ⭐ Favoritos <span id="favorites-count">0</span>
+            </button>
+        </div>
+    </div>
 </header>
 
-    <main>
-        <section> 
-            
+    <main id="main">
+        <section class="hero" aria-labelledby="hero-title"> 
+            <div class="container">
+                <h1 id="hero-title">Seleções da Copa do Mundo</h1>
+                <p class="hero-subtitle">
+                    Explore as seleções que marcaram a história nos Mundiais, com dados de população, capital, região e títulos conquistados.
+                </p>
+
+                <dl class="hero-stats">
+                    <div class="stat">
+                        <dt>Seleções Catalogadas</dt>
+                        <dd>14</dd>
+                    </div>
+                    <div class="stat">
+                        <dt>Continentes</dt>
+                        <dd>5</dd>                        
+                    </div>
+                    <div class="stat">
+                        <dt>Copas do mundo somadas</dt>
+                        <dd>21</dd>
+                    </div>
+                </dl>
+
+                <div class="hero-actions">
+                    <a href="#colecao" class="btn btn-primary">Ver Seleções</a>
+                    <a href="#sugerir" class="btn btn-secondary">Sugerir uma Seleção</a>
+            </div>
         </section>
+        
     </main>
 
     <footer>
