@@ -246,6 +246,54 @@
                 </div>
             </div>
         </section>        
+
+        <section id="sugerir" aria-labelledby="sugerir-title">
+            <div class="container">
+            <h2 id="sugerir-title">Sugerir uma seleção</h2>
+            <p>Não encontrou o país que procurava? Deixe sua sugestão abaixo.</p>
+
+            <form id="suggestion-form" novalidate>
+                <div class="form-group">
+                <label for="country-name">Nome do país</label>
+                <input
+                    type="text"
+                    id="country-name"
+                    name="country-name"
+                    required
+                    minlength="2"
+                >
+                </div>
+
+                <div class="form-group">
+                <label for="country-region">Região</label>
+                <select id="country-region" name="country-region" required>
+                    <option value="">Selecione uma região</option>
+                    <option value="America do Sul">América do Sul</option>
+                    <option value="America do Norte">América do Norte</option>
+                    <option value="Europa">Europa</option>
+                    <option value="Africa">África</option>
+                    <option value="Asia">Ásia</option>
+                    <option value="Oceania">Oceania</option>
+                </select>
+                </div>
+
+                <div class="form-group">
+                <label for="suggestion-message">Por que essa seleção deveria entrar? (opcional)</label>
+                <textarea
+                    id="suggestion-message"
+                    name="suggestion-message"
+                    rows="4"
+                ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                Enviar sugestão
+                </button>
+
+                <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+            </div>
+        </section>
     </main>
 
         <div class="modal-overlay" id="modal-overlay" hidden>
@@ -292,9 +340,8 @@
             ♡ Favoritar
         </button>
         </div>
-  </div>
-    <footer>
-    
+    </div>
+    <footer>         
     </footer>
 
     <script src="js/app.js"></script>
