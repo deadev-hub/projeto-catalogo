@@ -245,10 +245,54 @@
                     </article>
                 </div>
             </div>
-        </section>
-        
+        </section>        
     </main>
 
+        <div class="modal-overlay" id="modal-overlay" hidden>
+        <div
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        id="modal"
+        >
+        <button type="button" class="modal-close" aria-label="Fechar detalhes">
+            ✕
+        </button>
+
+        <img
+            src="https://flagcdn.com/w320/br.png"
+            alt="Bandeira do Brasil"
+            class="modal-flag"
+            id="modal-flag"
+        >
+
+        <h2 id="modal-title">Brasil</h2>
+
+        <dl class="modal-details">
+            <div class="detail-item">
+            <dt>Capital</dt>
+            <dd id="modal-capital">Brasília</dd>
+            </div>
+            <div class="detail-item">
+            <dt>Região</dt>
+            <dd id="modal-region">América do Sul</dd>
+            </div>
+            <div class="detail-item">
+            <dt>População</dt>
+            <dd id="modal-population">215.300.000</dd>
+            </div>
+            <div class="detail-item">
+            <dt>Copas do Mundo vencidas</dt>
+            <dd id="modal-titles">5</dd>
+            </div>
+        </dl>
+
+        <button type="button" class="btn-favorite" id="modal-favorite" aria-pressed="false">
+            ♡ Favoritar
+        </button>
+        </div>
+  </div>
     <footer>
     
     </footer>
